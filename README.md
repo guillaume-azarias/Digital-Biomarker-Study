@@ -2,7 +2,7 @@
 
 ## Background:
 
-XXXX is a voice-first solution that fosters autonomy and safety in the everyday life of elderly people. Users can communicate with relatives and call for help. In addition activity patterns can be derived from different sensors like CO2, temperature, noise, etc. If irregularities in the data are detected, CARU actively notifies caregivers.
+In this repository, we aim to infer human activity from the local concentration of CO$_{2}$. If irregularities in the data are detected, CARU actively notifies caregivers.
 
 ## Project Goals : Find patterns in the sensor signals that correlate with a person's activity.
 
