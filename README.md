@@ -1,4 +1,4 @@
-# Identification of abnormal activity from time series (code currently under editing for intellectual properties reasons. Please contact me for sample)
+# Identification of abnormal activity from time series (code currently under editing for intellectual properties reasons. Please contact me for a sample)
 
 ## Background:
 
