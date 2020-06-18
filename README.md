@@ -1,8 +1,8 @@
-# Identification of abnormal activity from time series
+# Identification of abnormal activity from time series (code currently under editing for intellectual properties reasons. Please contact me for sample)
 
 ## Background:
 
-In this repository, we aim to infer human activity from the local concentration of CO$_{2}$. If irregularities in the data are detected, CARU actively notifies caregivers.
+In this repository, we aim to infer human activity from the local concentration of CO$_{2}$.
 
 ## Project Goals : Find patterns in the sensor signals that correlate with a person's activity.
 
@@ -21,7 +21,7 @@ The overall goal is to find patterns in the sensors' signals that correlate with
 The data for this project contains anonymized time series data sampled every 20 seconds. You will know which night belongs to a given person, and each person will have at least 14 nights recorded. The type of residence is known, but not whether the device is placed in a bedroom or living room.
 Examples are the times someone goes to bed or wakes up in the morning, or nightly bathroom breaks. Patterns may also include unknown activities that nevertheless occur regularly across nights and persons. Create an activity report after each night.
 
-* device = one Caru device; always one per resident. However the tenant may
+* device = one device; always one per resident. However the tenant may
  move the device between rooms/residents.
 * tenant = the institution that bought the devices. They distribute them to their rooms/residents.
 * ts_date: Date and time. Datetime format. [UTC]
@@ -47,20 +47,16 @@ nobody lived in the room for a few days/weeks, and then somebody started living 
 
 **Integration**: Dashboard accessible through a web interface
 
-**Customers**: Caru's customers
+**Customers**: Caregivers and family members
 
 **Cost**: Free from the Propulsion Academy
 
-**Revenue**: Increase efficiency of caretakers
+**Revenue**: Increase efficiency of caregivers
 
 ### Code structure
 
 **`1_exploration`**: first handling of the data. Plotting time-series to find the relevant duration and amplitude of patterns. Data interpretation on a few examples.
 
-**`2_between-day_clustering`**:  k-shape using Dynamic Time Warping and hierarchical clustering
+**`2_forecasting`**: Anomaly detection using time-series forecasting using Prophet from facebook
 
-**`3_within-day_clustering`**:  
-
-**`4_forecasting`**: Anomaly detection using time-series forecasting using Prophet from facebook
-
-**`5_dashboard`**:  Web interface dedicated to the caregivers to inform and alert on the patient activities.
+**`3_dashboard`**:  Web interface dedicated to the caregivers to inform and alert on the patient activities.
