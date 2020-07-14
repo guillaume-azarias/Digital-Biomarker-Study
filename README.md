@@ -4,54 +4,46 @@
 
 This repository is an adaptation of a capstone project realised in an AgeTech company to the WESAD (Wearable Stress and Affect Detection) Data Set. WESAD is a publicly available dataset for wearable stress and affect detection available [here](https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29).
 
-## Project Goals : Find patterns in the sensor signals that correlate with a person's activity.
+## Project Goals : Find patterns in the sensor signals that correlate with a stress status.
 
 ## Objectives :
 
-This project focuses on analysing data derived from sensors deployed in households.
+This project focuses on analysing data derived from wearable sensors.
 
-The overall goal is to find patterns in the sensors' signals that correlate with a person's activity.
+The overall goal is to find patterns in the sensors' signals that correlate with a stress status.
+
+As of July 2020, this project is under development and may contain bugs. Please contact me for any information.
 
 ## Milestones:
-**Milestones 1**: Normalize the data, identify patterns, detect certain activities.
+**Milestones 1**: Fetch and structure and normalize the data. Identify patterns, detect certain activities.
 
-**Milestones 2**: Real-time activity reporting every 15 - 30 minutes. Be able to detect an activity (and maybe the type of activity) and send a notification.
+**Milestones 2**: Possibility to detect early change in stress data.
 
 ## Data:
-The data for this project contains anonymized time series data sampled every 20 seconds. You will know which night belongs to a given person, and each person will have at least 14 nights recorded. The type of residence is known, but not whether the device is placed in a bedroom or living room.
-Examples are the times someone goes to bed or wakes up in the morning, or nightly bathroom breaks. Patterns may also include unknown activities that nevertheless occur regularly across nights and persons. Create an activity report after each night.
 
-* device = one device; always one per resident. However the tenant may
- move the device between rooms/residents.
-* tenant = the institution that bought the devices. They distribute them to their rooms/residents.
-* ts_date: Date and time. Datetime format. [UTC]
-* light: Instantaneous clear light [counts] 
-* temperature: Instantaneous temperature [°C]
-* humidity: Instantaneous relative humidity [%]
-* co2: Instantaneous CO2 [ppm]
+Please find below a brief description from the [WESAD repository webpage](https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29):
 
-* *Room types*:
-    * See TenantRoomOverview.pdf (ind data)
-    * Some rooms are unoccupied for the entire time frame given
-    * Some rooms are occupied for the entire time frame given
-    * Some rooms had residents move in/out in the time frame given (i.e. first
-nobody lived in the room for a few days/weeks, and then somebody started living in the room. Or vice versa.)
-* Sometimes chunks of data are missing, e.g. when the tenant unplugged the devices (for unknown reasons)
+* Raw sensor data was recorded with two devices: a chest-worn device (RespiBAN) and a wrist-worn device (Empatica E4).
+* The RespiBAN device provides the following sensor data: electrocardiogram (ECG), electrodermal activity (EDA), electromyogram (EMG), respiration, body temperature, and three-axis acceleration. All signals are sampled at 700 Hz.
+* The Empatica E4 device provides the following sensor data: blood volume pulse (BVP, 64 Hz), electrodermal activity (EDA, 4 Hz), body temperature (4 Hz), and three-axis acceleration (32 Hz).
 
-### Approach
-**Skills**: Time-series analysis of data. Clustering - pattern analysis
+The [dataset's readme-file](wesad_readme.pdf) contains all further details with respect to the dataset structure, data format (RespiBAN device, Empatica E4 device, synchronised data), study protocol, and the self-report questionnaires.
+
+
+## Approach
+**Skills**: Time-series analysis of data.
 
 **Output**: Analysis report of activity. Dashboard for a patient-specific overview
 
-**Value Proposition**: Tells the caregiver/family if a resident is behaving normally or exhibit an abnormal activity. Detects persons in need of help
+**Value Proposition**: Tells the medical staff any stress-related physiological change.
 
-**Integration**: Dashboard accessible through a web interface
+**Integration**: Dashboard accessible through a web interface to be developed on Streamlit
 
-**Customers**: Caregivers and family members
+**Customers**: Medical staff
 
-**Cost**: Free from the Propulsion Academy
+**Cost**: Written acknowldegement.
 
-**Revenue**: Increase efficiency of caregivers
+**Revenue**: Stress detection may lower medical cost by enabling early detection of stress-related health issues. 
 
 ### Code structure
 
