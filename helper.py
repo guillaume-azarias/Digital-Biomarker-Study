@@ -1,5 +1,5 @@
 """
-This script centralized the functions used in the notebook Prophet Caru
+This script centralized the functions used in the notebook Prophet XXXX
 
 The functions in this script are:
 * load_ds: Load a device-specific dataframe located in the folder ../data/interim.
@@ -11,7 +11,7 @@ The functions in this script are:
 * find_index: Find the index of a date and time for a specific dataframe.
   Can be helpful for data exploration.
 * df_generator: Prepare the dataframe according to be processed by Prophet.
-  Critical function of Prophet Caru: please read the description within the
+  Critical function of Prophet: please read the description within the
   function definition.
 * prophet_fit: Fit the model to the time-series data and generate forecast
   for specified time frames. Version of the tutorial modified to work with
@@ -28,7 +28,7 @@ The functions in this script are:
 * GridSearch_Prophet: GridSearch tool for hyperparameter tuning of prophet
 
 ---------------------------------------------------------------------------
-Note: This script should be located in the same folder as Prophet Caru.ipynb
+Note: This script should be located in the same folder as Prophet WESAD.ipynb
 ---------------------------------------------------------------------------
 
 This script was PEP8 formatted using autopep8. To do it, enter this line in
@@ -280,7 +280,7 @@ def df_generator(df_dev, device, parameter, begin, end, sampling_period_st,
         # plt.show()
 
 #         # If you want to save the file
-#         folder = '/Users/guillaume/Documents/DS2020/Caru/caru/figures/'
+#         folder = '/Users/guillaume/Documents/DS2020/XXXX/XXXX/figures/'
 #         filename = folder + name + '.png'
 #         plt.savefig(filename, bbox_inches = "tight")
 #     else:
@@ -450,7 +450,7 @@ def prophet_plot(
     plt.legend(handles=[patch1, patch2, patch3, patch4])
 
     # If you want to save the file
-    # folder = '/Users/guillaume/Documents/DS2020/Caru/caru/figures/'
+    # folder = '/Users/guillaume/Documents/DS2020/XXXX/XXXX/figures/'
     # name = 'Prediction_' + df.iloc[today_index, 0].strftime('%Y-%m-%d')
     # filename = folder + name + '.png'
     # plt.savefig(filename, bbox_inches="tight")
@@ -621,7 +621,7 @@ def prophet(df_dev,
                  predict_days=predict_n, outliers=outliers)
 
     # If you want to save the file
-    folder = '/Users/guillaume/Documents/DS2020/Caru/caru/figures/all/'
+    folder = '/Users/guillaume/Documents/DS2020/XXXX/XXXX/figures/all/'
     # device33_Prediction_co2_2019-04-01_fo_3_10days_prediction
     d1 = datetime.strptime(begin, "%Y-%m-%d")
     d2 = datetime.strptime(end, "%Y-%m-%d")
@@ -695,16 +695,16 @@ def GridSearch_Prophet(prophet_grid, metric='mape'):
                 '_cps_' + str(mape_table.iloc[a, 7]) + '_fo_' + str(mape_table.iloc[a, 6]) + '_' + \
                 str('{:02d}'.format(pred_duration)) + 'td'
             # Save the figure
-            folder_name = '/Users/guillaume/Documents/DS2020/Caru/caru/figures/best/'
+            folder_name = '/Users/guillaume/Documents/DS2020/XXXX/XXXX/figures/best/'
             fig_name = folder_name + model_name + '.png'
             plt.savefig(fig_name, bbox_inches="tight")
             # Save the df_pred (prediction and actual values) as a csv
-            folder_name = '/Users/guillaume/Documents/DS2020/Caru/caru/data/processed/'
+            folder_name = '/Users/guillaume/Documents/DS2020/XXXX/XXXX/data/processed/'
             csv_name = folder_name + model_name + '.csv'
             df_pred.to_csv(csv_name)
         # elif a+1 == mape_table.shape[0]:
         #     # Store the complete mape_table if this is the last prediction
-        #     folder_name = '/Users/guillaume/Documents/DS2020/Caru/caru/data/processed/'
+        #     folder_name = '/Users/guillaume/Documents/DS2020/XXXX/XXXX/data/processed/'
         #     mape_table_name = folder_name + re.sub("[']", '', str(
         #         mape_table.iloc[0, 0])) + '_' + str(mape_table.iloc[a, 3]) + '_mape_table.csv'
         mape_table = mape_table.sort_values('mape')

@@ -1,8 +1,8 @@
-# Identification of abnormal activity from time series (code currently under editing for intellectual properties reasons. Please contact me for a sample)
+# Detection of abnormal activity using a wearable biosensor
 
 ## Background:
 
-In this repository, we aim to infer human activity from the local concentration of CO$_{2}$.
+This repository is an adaptation of a capstone project realised in an AgeTech company to the WESAD (Wearable Stress and Affect Detection) Data Set. WESAD is a publicly available dataset for wearable stress and affect detection available [here](https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29).
 
 ## Project Goals : Find patterns in the sensor signals that correlate with a person's activity.
 
