@@ -29,7 +29,6 @@ Please find below a brief description from the [WESAD repository webpage](https:
 
 The [dataset's readme-file](wesad_readme.pdf) contains all further details with respect to the dataset structure, data format (RespiBAN device, Empatica E4 device, synchronised data), study protocol, and the self-report questionnaires.
 
-
 ## Approach
 **Skills**: Time-series analysis of data.
 
