@@ -2,17 +2,17 @@
 
 ## Background:
 
-This repository is an adaptation of a capstone project realised in an AgeTech company to the WESAD (Wearable Stress and Affect Detection) Data Set. WESAD is a publicly available dataset for wearable stress and affect detection available [here](https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29).
+This repository is an adaptation of a capstone project realised during a Data Science bootcamp. The dataset used here is WESAD, a publicly available dataset for wearable stress and affect detection available [here](https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29).
 
 ## Project Goals : Find patterns in the sensor signals that correlate with a stress status.
 
 ## Objectives :
 
-This project focuses on analysing data derived from wearable sensors.
+This project focuses on analysing data derived from wearable sensors using the time series forecasting method Prophet from facebook.
 
 The overall goal is to find patterns in the sensors' signals that correlate with a stress status.
 
-As of July 2020, this project is under development and may contain bugs. Please contact me for any information.
+Please note that as of July 2020, this project is under development and may contain bugs. Please contact me for any information.
 
 ## Milestones:
 **Milestones 1**: Fetch and structure and normalize the data. Identify patterns, detect certain activities.
@@ -51,3 +51,6 @@ The [dataset's readme-file](wesad_readme.pdf) contains all further details with 
 **`2_forecasting`**: Anomaly detection using time-series forecasting using Prophet from facebook
 
 **`3_dashboard`**:  Web interface dedicated to the caregivers to inform and alert on the patient activities.
+
+> Questions:
+> Contact Guillaume Azarias at guillaume.azarias@hotmail.com
