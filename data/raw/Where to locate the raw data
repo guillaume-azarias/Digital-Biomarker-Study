@@ -1,0 +1,4 @@
+The script is written to fetch the data in the following folder:
+data_set_path = "../../Data/WESAD"
+
+To change the location of the raw data, you have to modify the string variable data_set_path.
