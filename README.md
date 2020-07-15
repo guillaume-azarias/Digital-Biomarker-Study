@@ -2,7 +2,8 @@
 
 ## Background:
 
-This repository is an adaptation of a capstone project realised during a Data Science bootcamp. The dataset used here is WESAD, a publicly available dataset for wearable stress and affect detection available [here](https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29).
+This repository is an adaptation of a capstone project realised during a Data Science bootcamp. The dataset used here is WESAD, a publicly available dataset for wearable stress and affect detection available [here](https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29). They published the following paper:
+Philip Schmidt, Attila Reiss, Robert Duerichen, Claus Marberger and Kristof Van Laerhoven. 2018. Introducing WESAD, a multimodal dataset for Wearable Stress and Affect Detection. In 2018 International Conference on Multimodal Interaction (ICMI ’18), October 16–20, 2018, Boulder, CO, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3242969.3242985
 
 ## Project Goals : Find patterns in the sensor signals that correlate with a stress status.
 
