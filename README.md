@@ -13,7 +13,7 @@ This project focuses on analysing data derived from wearable sensors using the t
 
 The overall goal is to find patterns in the sensors' signals that correlate with a stress status.
 
-Please note that as of July 2020, this project is under development and may contain bugs. Please contact me for any information.
+Please note that as of mid-September 2020, this project is under development and may contain bugs. Please contact me for any information.
 
 ## Milestones:
 **Milestones 1**: Fetch and structure and normalize the data. Identify patterns, detect certain activities.
